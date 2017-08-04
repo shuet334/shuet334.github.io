@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran');
+
+body{
+	background: black;
+	font-family: "Catamaran", sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul{
+	height: 100%;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+nav ul li{
+	display: inline-block;
+	width: 33%;
+	height: 100%;
+}
+
+nav ul li a{
+	display: block;
+	color: black;
+	margin-top: 25px;
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center;
+	transition: all 1s ease-in-out;
+}
+
+nav ul li a:hover{
+	color: red;
+	font-size: 30px;
+}
+
+h2{
+	display: block;
+	color: white;
+}
+
+p{
+	display: block;
+	color: white;
+	width: 400px;
+	margin-left: 100px;
+	margin-top: 150px;
+}
+
+#profile-image{
+	display: block;
+	margin-top: 50px;
+}
+
+#bottom img{
+	border-radius: 10px;
+	width: 30px;
+	height: 30px;
+	margin-top: 25px;
+	margin-left: 50%;
+	max-height: 100%;
+	max-width: 100%;
+	transition: all 0.5s linear;
+}
+
+#bottom img:hover{
+	transform: rotate(360deg);
+}
+
+#Mytitle{
+	position: relative;
+	background: black;
+	color: white;
+	font-size: 32px;
+	font-weight: 60px;
+	top: 50px;
+	width: 100%;
+	left: 50px;
+}
+
+#navigation{
+	z-index: 9;
+	position: fixed;
+	width: 100%;
+	background: rgb(255, 229, 43);
+	color: black;
+	height: 80px;
+	top: 0; 
+	left: 0;
+}
+
+#container{
+	width: 100%
+	margin-left:10%;
+	margin-right: 10%;
+	margin-top: 0;
+	margin-bottom: 50px;
+	display: inline-flex;
+}
+
+#daniel{
+	display: inline-block;
+	position: relative;
+	margin-left: 10%;
+	margin-right: 5%;
+	float: left;
+}
+
+#introduction{
+	display: inline-block;
+	position: relative;
+	width: 80%;
+	margin-top: 40%;
+	height: auto;
+	float: left;
+}
+
+#footer{
+	display: block;
+	background: white;
+	margin-top: 50px;
+	width: 100%;
+	height: 80px;
+}
+
+.works{
+	width: 300px;
+	height: 200px;
+	margin-top: 0px;
+	margin-left: 40px;
+	display: inline-block;
+	background: rgb(255, 255, 255);
+	border-radius: 10px;
+	cursor: pointer;
+	position: relative;
+}
+
+#work1 img{
+	border-radius: 10px;
+	width: 300px;
+	height: 200px;
+	text-align: center;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+#work1{
+	transition: all 0.5s ease-in-out;
+	filter: grayscale(1);
+}
+
+#work1:hover{
+	filter: grayscale(0);
+	background-size: 110%;
+}
+
+#work2{
+	transition: all 0.5s ease-in-out;
+	filter: grayscale(1);
+}
+
+#work2 img{
+	border-radius: 10px;
+	width: 300px;
+	height: 200px;
+	text-align: center;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+#work2:hover{
+	filter: grayscale(0);
+	background-size: 110%;
+}
+
+#work3{
+
+	transition: all 0.5s ease-in-out;
+	filter: grayscale(1);
+}
+
+#work3 img{
+	border-radius: 10px;
+	width: 300px;
+	height: 200px;
+	text-align: center;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+#work3:hover{
+	filter: grayscale(0);
+	background-size: 110%;
+}
+
+#work4{
+	transition: all 0.5s ease-in-out;
+	filter: grayscale(1);
+}
+
+#work4 img{
+	border-radius: 10px;
+	width: 300px;
+	height: 200px;
+	text-align: center;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+#work4:hover{
+	filter: grayscale(0);
+	background-size: 110%;
+}
+
+
+
+
+
+
+
+
