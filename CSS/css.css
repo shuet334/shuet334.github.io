@@ -5,6 +5,7 @@ body{
 	font-family: "Catamaran", sans-serif;
 	padding: 0;
 	margin: 0;
+	border: 0;
 }
 
 nav ul{
@@ -36,48 +37,116 @@ nav ul li a:hover{
 	font-size: 30px;
 }
 
-h2{
+#container1{
+	z-index: 10;
+	display: inline-block;
+	display: flex;
+	background-color: black;
+	width: 100%;
+	height: 100%;
+}
+
+#daniel{
 	display: block;
-	color: white;
-}
-
-p{
-	display: block;
-	color: white;
-	width: 400px;
-	margin-left: 100px;
-	margin-top: 150px;
-}
-
-#profile-image{
-	display: block;
-	margin-top: 50px;
-}
-
-#bottom img{
-	border-radius: 10px;
-	width: 30px;
-	height: 30px;
-	margin-top: 25px;
-	margin-left: 50%;
-	max-height: 100%;
-	max-width: 100%;
-	transition: all 0.5s linear;
-}
-
-#bottom img:hover{
-	transform: rotate(360deg);
-}
-
-#Mytitle{
 	position: relative;
-	background: black;
+	width: 520px;
+	height: 650px;
+	margin-top: 80px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#daniel img{
+	height: 100%;
+	width: 100%;
+}
+
+
+#Mytitle {
+	display: block;
+	position: relative;
+	background-color: black;
 	color: white;
 	font-size: 32px;
 	font-weight: 60px;
-	top: 50px;
+	top: 250px;
+	width: 50%;
+	height: 150px;
+	left: 30px;
+	float: right;
+}
+
+#Mytitle h3{
+	top: 30px;
+}
+#container2{
+	display: inline-block;
 	width: 100%;
-	left: 50px;
+	height: 500px;
+	font-size: 20px;
+	background-color: rgb(0, 13, 138);
+}
+
+#title{
+	display: block;
+	background-color: black;
+	width: 100%;
+	height: 50px;
+	margin-top: 0px;
+}
+
+#title h3{
+	color: white;
+	margin-top: 10px;
+	margin-left: 30px;
+	font-size: 30px;
+}
+
+#animation{
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	animation-name: slideshow;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes slideshow{
+	0%{
+		margin-top: 110px;
+		margin-left: 450px;
+		background-color: red;
+	}
+	25%{
+		margin-top: 110px;
+		margin-left: 950px;
+		background-color: blue;
+	}
+	50%{
+		margin-top: 320px;
+		margin-left: 950px;
+		background-color: yellow;
+	}
+	75%{
+		margin-top: 320px;
+		margin-left: 450px;
+		background-color: green;
+	}
+	100%{
+		margin-top: 110px;
+		margin-left: 450px;
+		background-color: red;
+	}
+}
+
+#container2 p{
+	display: block;
+	color: white;
+	width: 400px;
+	margin-left: 500px;
+	margin-top: 150px;
+	text-align:  center;
 }
 
 #navigation{
@@ -91,7 +160,7 @@ p{
 	left: 0;
 }
 
-#container{
+#container2{
 	width: 100%
 	margin-left:10%;
 	margin-right: 10%;
@@ -100,47 +169,35 @@ p{
 	display: inline-flex;
 }
 
-#daniel{
-	display: inline-block;
-	position: relative;
-	margin-left: 10%;
-	margin-right: 5%;
-	float: left;
-}
+
 
 #introduction{
 	display: inline-block;
-	position: relative;
-	width: 80%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 	margin-top: 40%;
 	height: auto;
 	float: left;
 }
 
-#footer{
-	display: block;
-	background: white;
-	margin-top: 50px;
-	width: 100%;
-	height: 80px;
-}
-
 .works{
 	width: 300px;
-	height: 200px;
-	margin-top: 0px;
+	height: 300px;
+	margin-top: 30px;
 	margin-left: 40px;
+	margin-bottom: 50px;
 	display: inline-block;
 	background: rgb(255, 255, 255);
 	border-radius: 10px;
 	cursor: pointer;
-	position: relative;
+
 }
 
 #work1 img{
 	border-radius: 10px;
-	width: 300px;
-	height: 200px;
+	width: 100%;
+	height: 100%;
 	text-align: center;
 	max-height: 100%;
 	max-width: 100%;
@@ -153,7 +210,7 @@ p{
 
 #work1:hover{
 	filter: grayscale(0);
-	background-size: 110%;
+	size: 110%;
 }
 
 #work2{
@@ -163,8 +220,8 @@ p{
 
 #work2 img{
 	border-radius: 10px;
-	width: 300px;
-	height: 200px;
+	width: 100%;
+	height: 100%;
 	text-align: center;
 	max-height: 100%;
 	max-width: 100%;
@@ -183,8 +240,8 @@ p{
 
 #work3 img{
 	border-radius: 10px;
-	width: 300px;
-	height: 200px;
+	width: 100%;
+	height: 100%;
 	text-align: center;
 	max-height: 100%;
 	max-width: 100%;
@@ -202,8 +259,8 @@ p{
 
 #work4 img{
 	border-radius: 10px;
-	width: 300px;
-	height: 200px;
+	width: 100%;
+	height: 100%;
 	text-align: center;
 	max-height: 100%;
 	max-width: 100%;
@@ -213,6 +270,345 @@ p{
 	filter: grayscale(0);
 	background-size: 110%;
 }
+
+/*---------------------Work----------------------*/
+
+#IntroductionWork{
+	display: block;
+	width: 100%;
+	height: 300px;
+	background-color: rgb(104, 6, 255);
+}
+
+#IntroductionWork p{
+	display: inline-block;
+	position: relative;
+	width: 400px;
+	margin-left: 500px;
+	color: white;
+	margin-top: 150px;
+	text-align: center;
+}
+
+#display{
+	display: block;
+	width: 100%;
+	height: 2000px;
+}
+/*---------------------------------------*/
+#shelf1{
+	display: inline-block;
+	display: flex;
+	width: 100%;
+	height: 500px;
+}
+
+#piclink1{
+	display: block;
+	position: relative;
+	border-radius: 10px;
+	width: 300px;
+	height: 300px;
+	background-color: white;
+	margin-left: 14%;
+	margin-top: 100px;
+}
+
+#piclink1 img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	transition: all 0.5s ease-in-out;
+	filter: grayscale(1);
+}
+
+#piclink1 img:hover{
+	filter: grayscale(0);
+	background-size: 110%;
+}
+
+#intropiece1 {
+	text-align: center;
+}
+
+#intropiece1 h2{
+	display: block;
+	position: relative;
+	color: white;
+	width: 100%;
+	font-size: 30px;
+	margin-left: 63%;
+	margin-top: 120px;
+
+}
+
+#intropiece1 p{
+	display: block;
+	position: relative;
+	color: white;
+	width: 400px;
+	text-align: center;
+	margin-left: 73%;
+	margin-top: 50px;
+}
+/*---------------------------------------*/
+#shelf2{
+	display: inline-block;
+	display: flex;
+	width: 100%;
+	height: 500px;
+}
+
+#piclink2{
+	display: block;
+	position: relative;
+	border-radius: 10px;
+	width: 300px;
+	height: 300px;
+	background-color: white;
+	margin-left: 14%;
+	margin-top: 100px;
+}
+
+#piclink2 img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	transition: all 0.5s ease-in-out;
+	filter: grayscale(1);
+}
+
+#piclink2 img:hover{
+	filter: grayscale(0);
+	background-size: 110%;
+}
+
+#intropiece2 {
+	text-align: center;
+}
+
+#intropiece2 h2{
+	display: block;
+	position: relative;
+	color: white;
+	width: 100%;
+	font-size: 30px;
+	margin-left: 63%;
+	margin-top: 100px;
+
+}
+
+#intropiece2 p{
+	display: block;
+	position: relative;
+	color: white;
+	width: 400px;
+	text-align: center;
+	margin-left: 73%;
+	margin-top: 50px;
+}
+/*---------------------------------------*/
+#shelf3{
+	display: inline-block;
+	display: flex;
+	width: 100%;
+	height: 500px;
+}
+
+#piclink3{
+	display: block;
+	position: relative;
+	border-radius: 10px;
+	width: 30%;
+	height: 300px;
+	background-color: white;
+	margin-left: 10%;
+	margin-top: 100px;
+}
+
+#piclink3 img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	transition: all 0.5s ease-in-out;
+	filter: grayscale(1);
+}
+
+#piclink3 img:hover{
+	filter: grayscale(0);
+	background-size: 110%;
+}
+
+#intropiece3 {
+	text-align: center;
+}
+
+#intropiece3 h2{
+	display: block;
+	position: relative;
+	color: white;
+	width: 100%;
+	font-size: 30px;
+	margin-left: 77%;
+	margin-top: 100px;
+
+}
+
+#intropiece3 p{
+	display: block;
+	position: relative;
+	color: white;
+	width: 400px;
+	text-align: center;
+	margin-left: 80%;
+	margin-top: 50px;
+}
+/*---------------------------------------*/
+#shelf4{
+	display: inline-block;
+	display: flex;
+	width: 100%;
+	height: 500px;
+}
+
+#piclink4{
+	display: block;
+	position: relative;
+	border-radius: 10px;
+	width: 30%;
+	height: 300px;
+	background-color: white;
+	margin-left: 10%;
+	margin-top: 100px;
+}
+
+#piclink4 img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	transition: all 0.5s ease-in-out;
+	filter: grayscale(1);
+}
+
+#piclink4 img:hover{
+	filter: grayscale(0);
+	background-size: 110%;
+}
+
+#intropiece4 {
+	text-align: center;
+}
+
+#intropiece4 h2{
+	display: block;
+	position: relative;
+	color: white;
+	width: 100%;
+	font-size: 30px;
+	margin-left: 77%;
+	margin-top: 100px;
+
+}
+
+#intropiece4 p{
+	display: block;
+	position: relative;
+	color: white;
+	width: 400px;
+	text-align: center;
+	margin-left: 80%;
+	margin-top: 50px;
+}
+/*------------------------------------------ContactMe*/
+
+#FeelFree{
+	display: inline-block;
+	display: flex;
+	width: 100%;
+	height: 300px;
+	background-color: black;
+	text-align: center;
+}
+
+#FFtext{
+	display: block;
+	color: white;
+	font-size: 32px;
+	margin-top: 200px;
+	margin-left: 33%;
+}
+
+#links{
+	display: inline-block;
+	display: flex;
+	width: 100%;
+	height: 500px;
+	margin-left: 27%;
+	background-color: black;
+	text-align: center;
+}
+
+.SN{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+	margin-left: 50px;
+	margin-top: 100px;
+	background-color: black;
+}
+
+#contactlink1 img{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	transition: all 0.5s linear;
+}
+
+#contactlink1 img:hover{
+	transform: rotate(360deg);
+}
+
+#contactlink2 img{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	transition: all 0.5s linear;
+}
+
+#contactlink2 img:hover{
+	transform: rotate(360deg);
+}
+
+#contactlink3 img{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	transition: all 0.5s linear;
+}
+
+#contactlink3 img:hover{
+	transform: rotate(360deg);
+}
+
+#contactlink4 img{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	transition: all 0.5s linear;
+}
+
+#contactlink4 img:hover{
+	transform: rotate(360deg);
+}
+
+
+
+
 
 
 
